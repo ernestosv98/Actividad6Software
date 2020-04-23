@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="crema">
+    <ion-title>
+      Cart
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item color="negativo">
+    <ion-label> Item </ion-label>
+    <ion-label > Price </ion-label>
+    <ion-label > Quantity </ion-label>
+    <ion-label > Total </ion-label>
+  </ion-item>
+
+  <ion-list>
+    <ion-item *ngFor="let entry of cart">
+      <ion-label *ngIf="entry.totalQuantity>0 "> {{entry.item.name}} </ion-label>
+      <ion-label *ngIf="entry.totalQuantity>0 "> {{entry.subtotal}} </ion-label>
+      <ion-label *ngIf="entry.totalQuantity>0 "> {{entry.totalQuantity}} </ion-label>
+      <ion-label *ngIf="entry.totalQuantity>0 "> {{entry.total}} </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item *ngFor="let entry of customEntries">
+      <ion-label> {{entry.name}} </ion-label>
+      <ion-label> {{entry.total}} </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="block" (click)="charge()" fill="outline" color="negativo"> Charge: {{total | currency}} </ion-button>
+  <ion-button expand="block" (click)="dismiss()" fill="outline" color="danger"> Close </ion-button>
+ 
+</ion-content>

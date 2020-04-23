@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="crema">
+    <ion-title> Add Item</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label color="crema">Name</ion-label>
+    <ion-input [(ngModel)]="name">  </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="crema">Price</ion-label>
+    <ion-input [(ngModel)]="price">  </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="crema">Available</ion-label>
+    <ion-checkbox [(ngModel)]="status"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="crema">Hidden</ion-label>
+    <ion-checkbox [(ngModel)]="hidden"></ion-checkbox>
+  </ion-item>
+
+
+  <div class="center">
+    <ion-button color="crema" fill="clear" (click)="add()">
+      Confirm
+    </ion-button>
+    <ion-button color="danger" fill="clear" (click)="dismiss()">
+      Cancel
+    </ion-button>
+
+  </div>
+
+</ion-content>

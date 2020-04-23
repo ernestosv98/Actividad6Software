@@ -24,3 +24,88 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+:root {
+    --ion-color-crema: #9ee7d7;
+    --ion-color-crema-rgb: 251,187,173;
+    --ion-color-crema-contrast: #000000;
+    --ion-color-crema-contrast-rgb: 0,0,0;
+    --ion-color-crema-shade: #9ee7d7;
+    --ion-color-crema-tint: #9ee7d7;
+  }
+  
+  .ion-color-crema {
+    --ion-color-base: var(--ion-color-crema);
+    --ion-color-base-rgb: var(--ion-color-crema-rgb);
+    --ion-color-contrast: var(--ion-color-crema-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-crema-contrast-rgb);
+    --ion-color-shade: var(--ion-color-crema-shade);
+    --ion-color-tint: var(--ion-color-crema-tint);
+  }
+
+  :root {
+    --ion-color-negativo: #d5d5d5;
+    --ion-color-negativo-rgb: 251,187,173;
+    --ion-color-negativo-contrast: #000000;
+    --ion-color-negativo-contrast-rgb: 0,0,0;
+    --ion-color-negativo-shade: #d5d5d5;
+    --ion-color-negativo-tint: #d5d5d5;
+  }
+  
+  .ion-color-negativo {
+    --ion-color-base: var(--ion-color-negativo);
+    --ion-color-base-rgb: var(--ion-color-negativo-rgb);
+    --ion-color-contrast: var(--ion-color-negativo-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-negativo-contrast-rgb);
+    --ion-color-shade: var(--ion-color-negativo-shade);
+    --ion-color-tint: var(--ion-color-negativo-tint);
+  }
+  
+
+  :root {
+    --ion-color-medio: #303030 ;
+    --ion-color-medio-rgb: 251,187,173;
+    --ion-color-medio-contrast: #d5d5d5;
+    --ion-color-medio-contrast-rgb: 0,0,0;
+    --ion-color-medio-shade: #303030 ;
+    --ion-color-medio-tint: #303030 ;
+  }
+  
+  .ion-color-medio {
+    --ion-color-base: var(--ion-color-medio);
+    --ion-color-base-rgb: var(--ion-color-medio-rgb);
+    --ion-color-contrast: var(--ion-color-medio-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-medio-contrast-rgb);
+    --ion-color-shade: var(--ion-color-medio-shade);
+    --ion-color-tint: var(--ion-color-medio-tint);
+  }
+
+.list {
+    background-color:#1f1f1f  ;
+}
+
+.anotherlist {
+  background-color:#303030; 
+}
+
+.carta {
+    background-color:#303030;
+    color:#ffffff;
+
+}
+
+.calculadora {
+  width: 100%;
+  height: 100%;
+}
+
+.center{
+  text-align: center;
+}
+
+
+
+ion-content{
+
+  --ion-background-color:#1f1f1f  ;
+}
